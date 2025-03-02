@@ -1,0 +1,22 @@
+.navbar{
+    border-bottom: 1px solid #808080 ;
+    border-top: 1px solid #808080;
+    display: flex;
+    align-items: center;
+}
+.navlinks{
+    padding-left: 30px;
+    display: flex;
+    gap: 20px;
+}
+.navlinks div{
+    padding: 10px;
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: #000;
+}
+.border{
+    border-bottom: 2px solid #000;
+}

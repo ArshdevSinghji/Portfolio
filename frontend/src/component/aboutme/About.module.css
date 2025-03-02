@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.introDetails{
+    display: flex;
+    justify-content: space-between;
+}
+.theDets{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.intro{
+    padding:5px 10px 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #808080;
+}
+.touch{
+    display: flex;
+    justify-content: space-between;
+}
+.border{
+    
+}
