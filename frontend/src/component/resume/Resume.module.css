@@ -1,0 +1,104 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.detailContainer{
+    width: 30%;
+}
+.title{
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.eduDetail{
+    color: #fff;
+    background-color: #231F20;
+    padding: 15px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.year{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.year span{
+    font-size: 12px;
+    padding: 5px;
+    color: #000;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.expertise{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.skill{
+    padding: 7px;
+    border-radius: 17px;
+    font-weight: 600;
+    border: 1px solid #000;
+}
+.color{
+    padding: 7px;
+    border-radius: 17px;
+    font-weight: 600;
+    background-color: #0a66c2;
+    color: #fff;
+}
+.achievement{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-weight: 500;
+}
+.internDetail{
+    padding: 15px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 1px solid #000;
+}
+.internYear{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.internYear span{
+    font-size: 12px;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+    border-radius: 15px;
+}
+.projectDetail{
+    padding: 15px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 2px solid #000;
+}
+.projectYear{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projectYear span{
+    font-size: 12px;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0a66c2;
+    border-radius: 15px;
+}

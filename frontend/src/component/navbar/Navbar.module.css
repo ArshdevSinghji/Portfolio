@@ -1,22 +1,61 @@
-.navbar{
-    border-bottom: 1px solid #808080 ;
-    border-top: 1px solid #808080;
+.container{
+    border-bottom: 1px solid #808080;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
-.navlinks{
-    padding-left: 30px;
+.nav{
+    padding: 5px 5px 0;
+    height: 44px;
+}
+.tabContainer{
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 20px;
 }
-.navlinks div{
-    padding: 10px;
+.tab{
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: relative;
     cursor: pointer;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 0;
+    user-select: none;
 }
-.link{
+.underline{
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 5px;
+}
+a{
     text-decoration: none;
     color: #000;
 }
-.border{
-    border-bottom: 2px solid #000;
+.code{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+}
+.darkTheme .container{
+    background-color: #000;
+    border-bottom: 1px solid #8080;
+}
+.darkTheme .underline{
+    background-color: #fff;
+}
+.darkTheme a{
+    color: #fff;
+}
+.darkTheme .code{
+    color: #fff;
 }

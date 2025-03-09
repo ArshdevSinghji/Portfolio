@@ -1,8 +1,50 @@
-.container{
+.bigcontainer{
+    padding: 10px;
     display: flex;
     align-items: center;
+    height: 90vh;
+    overflow: hidden;
+}
+.container{
+    display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    padding-bottom: 20px;
+}
+.imageContainer{
+    position: relative;
+    height: 75vh;
+    width: 47%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.imageContainer img{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: -65%;
+    object-fit: cover;
+}
+.textOverlay{
+    position: absolute;
+    color: #fff;
+    top: 5%;
+    left: 3%;
+}
+.textOverlay div span{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.textOverlay2{
+    position: absolute;
+    color: #fff;
+    width: 80%;
+    top: 75%;
+    left: 17%;
+    text-align: end;
+}
+.textOverlay2 p{
+    font-weight: 600;
 }
 .details{
     width: 50%;
@@ -13,6 +55,7 @@
 .introDetails{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .theDets{
     display: flex;
@@ -24,10 +67,71 @@
     border-radius: 20px;
     border: 1px solid #808080;
 }
+.introText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    /* border: 1px solid black; */
+}
+.introText div{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.illustration{
+    width: 50%;
+    overflow: hidden;
+}
+.illustration img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 .touch{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.border{
-    
+.touchDetails{
+    display: flex;
+    gap: 10px;
 }
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    height: auto;
+    width: 25%;
+    border-radius: 20px;
+}
+.linkedIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #0a66c2;
+    color: #fff;
+    height: auto;
+    width: 25%;
+    border-radius: 20px;
+}
+.logo{
+    height: 6.4rem;
+    font-size: 2rem;
+}
+.linkText{
+    display: flex;
+    flex-flow: row-reverse;
+    font-size: 12px;
+}
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #DC143C;
+    text-decoration-thickness: 2px; /* Optional: Adjust the thickness of the underline */
+    text-underline-offset: 2px; /* Optional: Adjust the offset of the underline */
+    color: inherit; /* Ensure the text color is inherited */
+  }
