@@ -56,7 +56,7 @@ const LeetCodeProfile = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch("http://localhost:5000/leetcode", {
+        const response = await fetch("https://portfolio-bi16.onrender.com/leetcode", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ username }),

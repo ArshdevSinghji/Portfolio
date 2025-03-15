@@ -9,7 +9,7 @@ const GFGProfile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await fetch("http://localhost:5000/gfg");
+        const response = await fetch("https://portfolio-bi16.onrender.com/gfg");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
