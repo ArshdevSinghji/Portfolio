@@ -66,7 +66,7 @@ const Resume = () => {
                     <div>
                       <div style={{color:"#4d4d4d", fontSize:"14px"}}><i>Skills: ReactJS, NodeJS, ExpressJS, MongoDB</i></div>
                       <div style={{fontSize:"1.3rem", fontWeight:"600"}}>Role Based Access Control UI</div>
-                      <div style={{fontSize:"14px"}}>(Click Me!)</div>
+                      <div style={{fontSize:"14px"}}><a href='https://github.com/ArshdevSinghji/Employee-Management-System' target='_blank'>(Click Me!)</a></div>
                     </div>
                   </div>
                   <hr style={{border:"1px solid #808080", margin:"20px 0px 20px 0px"}}/>
@@ -78,7 +78,7 @@ const Resume = () => {
                     <div>
                       <div style={{color:"#4d4d4d", fontSize:"14px"}}><i>Skills: Javascript, ReactJS</i></div>
                       <div style={{fontSize:"1.3rem", fontWeight:"600"}}>Virtual Bookshelf</div>
-                      <div style={{fontSize:"14px"}}>(Click Me!)</div>
+                      <div style={{fontSize:"14px", cursor:"pointer"}}><a href='https://github.com/ArshdevSinghji/virtual_bookshelf' target='_blank'>(Click Me!)</a></div>
                     </div>
                   </div>
                   <hr style={{border:"1px solid #808080", margin:"20px 0px 20px 0px"}}/>
@@ -90,7 +90,7 @@ const Resume = () => {
                     <div>
                       <div style={{color:"#4d4d4d", fontSize:"14px"}}><i>Skills: ReactJS, Spring Boot, H2 Database, Spring Web, JPA, Lombok</i></div>
                       <div style={{fontSize:"1.3rem", fontWeight:"600"}}>E-Commerce Platform</div>
-                      <div style={{fontSize:"14px"}}>(Click Me!)</div>
+                      <div style={{fontSize:"14px"}}><a href='https://github.com/ArshdevSinghji/ECOM-SpringBoot' target='_blank'>(Click Me!)</a></div>
                     </div>
                   </div>
                 </div>

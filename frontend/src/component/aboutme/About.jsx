@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import style from './About.module.css'
+import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
-import { easeIn, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-// import { TypeWriter } from 'typewriter-effect'
 import image from '../../assets/freepik__adjust__26199.png'
 import myimage from '../../assets/image.jpg'
+import style from './About.module.css'
+
 const About = () => {
   const [intro, setIntro] = useState(true);
   const [touch, setTouch] = useState(true);

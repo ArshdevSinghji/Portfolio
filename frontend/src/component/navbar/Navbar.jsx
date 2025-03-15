@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandPointRight, faSquarePollVertical } from '@fortawesome/free-solid-svg-icons';
 import style from './Navbar.module.css';
@@ -8,14 +8,24 @@ import style from './Navbar.module.css';
 const Navbar = () => {
     const tabs = ["About me", "Resume", "Experience"];
     const paths = ["/", "/resume", "/experience"];
+    const location = useLocation();
 
-    const [selectedTab, setSelectedTab] = useState(()=>{
-        return localStorage.getItem('selectedTab') || tabs[0];
+    const [selectedTab, setSelectedTab] = useState(() => {
+      const savedTab = localStorage.getItem('selectedTab');
+      return savedTab ? savedTab : tabs[0];
     });
-
-    useEffect(()=>{
-        localStorage.setItem('selectedTab', selectedTab);
-    },[selectedTab]);
+  
+    useEffect(() => {
+      localStorage.setItem('selectedTab', selectedTab);
+    }, [selectedTab]);
+  
+    useEffect(() => {
+      const currentPath = location.pathname;
+      const currentTab = tabs[paths.indexOf(currentPath)];
+      if (currentTab) {
+        setSelectedTab(currentTab);
+      }
+    }, [location.pathname]);
 
     useEffect(()=>{
         if(selectedTab === "Experience"){
@@ -54,7 +64,9 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faHandPointRight} style={{fontSize:"16px", color:"#DC143C"}}/>
                 </motion.div>
                 <div>
-                    <Link to={'/codingStats'}><FontAwesomeIcon icon={faSquarePollVertical} style={{cursor:"pointer"}}/></Link> 
+                    <Link to={{pathname: '/leetcode'}}>
+                        <FontAwesomeIcon icon={faSquarePollVertical} style={{cursor:"pointer"}}/>
+                    </Link> 
                 </div>
             </div>
         </div>
